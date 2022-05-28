@@ -108,7 +108,9 @@ let g:coc_global_extensions = [
 	\ 'coc-vimlsp',
 	\ ]
 
-"Addd status line support, for integration with other plugin, checkout ':h coc-status'
+set updatetime=300
+
+"Add status line support, for integration with other plugin, checkout ':h coc-status'
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Using CocList
