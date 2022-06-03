@@ -29,6 +29,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'morhetz/gruvbox'
 Plug 'puremourning/vimspector'
+Plug 'kdheepak/lazygit.nvim'
 call plug#end()
 
 set title
@@ -208,6 +209,10 @@ augroup highlight_yank
 	autocmd!
 	au TextYankPost * silent! lua vim.highlight.on_yank { higroup='IncSearch', timeout=400 }
 augroup END
+
+" Lazygit config
+nnoremap <silent> <leader>gg :LazyGit<CR>
+let g:lazygit_floating_window_winblend = 0 " transparency of floating window"
 
 " Function for toggling the bottom statusbar:
 let s:hidden_all = 0
