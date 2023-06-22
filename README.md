@@ -1,6 +1,6 @@
 # arch-dotfiles
 
-These are the dotfiles deployed by [KARBS](https://github.com/BKlaasWerkman/KARBS)
+These are the dotfiles
 
 - Very useful scripts are in `~/.local/bin/`
 - Settings for:
